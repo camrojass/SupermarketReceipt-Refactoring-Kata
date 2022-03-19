@@ -140,5 +140,6 @@ Continuando la estrategía de pruebas propuesta en la solución (probar los esce
   
 ## Autores ✒️
 
-* **Camilo Alejandro Rojas** - *Trabajo Inicial y documentación* - [camrojass](https://github.com/camrojass)
-* **Heimar Yadir Vega** - *Revisión* - [heimarvega](https://github.com/heimarvega)
+* **Dave Thomas** - *Descripción Inicial* - [codekata](http://codekata.com/kata/kata01-supermarket-pricing/)
+* **Emily Bache** - *Variacion de la Kata* - [emilybache](https://github.com/emilybache)
+* **Camilo Alejandro Rojas** - *Trabajo y documentación* - [camrojass](https://github.com/camrojass)
