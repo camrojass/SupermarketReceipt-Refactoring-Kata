@@ -138,3 +138,7 @@ Continuando la estrategía de pruebas propuesta en la solución (probar los esce
   - Utilizar las prácticas de clean code hasta en las Pruebas Unitarias.
   - Segmentar mejor las pruebas
   
+## Autores ✒️
+
+* **Camilo Alejandro Rojas** - *Trabajo Inicial y documentación* - [camrojass](https://github.com/camrojass)
+* **Heimar Yadir Vega** - *Revisión* - [heimarvega](https://github.com/heimarvega)
