@@ -325,33 +325,47 @@ Paso 3. Complementar con pruebas por clase o por sección.
 
   ## Modelo de Calidad
   
-  Después de revisión de la solución a través de [bettercodehub](http://bettercodehub.com/), el cual presenta un análisis en multiples aspectos (10 aspectos), se detecta que e código cumple con los siguientes ítems positivos.
+  ### Pasos preliminares
   
-  ### Escribir el código en pequeñas unidades
+  Para realizar el análisis a través [bettercodehub](http://bettercodehub.com/) se debe tener cuenta en la plataforma o se puede utilizar la cuenta de de github. Se puede utilizar en versión gratuita la cual permite realizar análisis ilimitados pero las soluciones que quedan públicas o la cuenta paga la cual permite el análisis a soluciones privadas. Cabe mencionar que los planes pagos tienen una versión de prueba por un tiempo limitado.
+  
+  Una vez seleccionado el plan la herramienta precarga la información de todos los repositorios de tu cuenta github. Selecciona el repositorio correspondiente y ejecuta el análisis.
+  
+  ### Resultado del Análisis 
+  
+  [![BCH compliance](https://bettercodehub.com/edge/badge/camrojass/SupermarketReceipt-Refactoring-Kata?branch=main)](https://bettercodehub.com/)
+  
+  ![image](https://user-images.githubusercontent.com/100396227/159835996-b36e78ad-272e-4889-afda-dc9ba072a0ac.png)
+  ![image](https://user-images.githubusercontent.com/100396227/159836079-ff756deb-4977-4667-8479-66708f66d250.png)
+  ![image](https://user-images.githubusercontent.com/100396227/159836725-171ee016-82e5-419b-bcba-873d8bea0516.png)
+  
+Después de la ejecución del ánalisis en la solución a través de [bettercodehub](http://bettercodehub.com/), el cual presenta un análisis en multiples aspectos (10 aspectos), se detecta que e código cumple con los siguientes ítems positivos.
+  
+  * #### Escribir el código en pequeñas unidades
   Esto indica que el código en general está seccionado en pequeñas unidades.
   
-  ### Escribir código una sola vez (No repetido)
+  * #### Escribir código una sola vez (No repetido)
   El código no tiene secciones repetidas.
   
-  ### Separar código por módulos
+  * #### Separar código por módulos
   El código está seperado por módulos (Modelo de Objetos, Carro de compras, Recibido, etc.)
   
-  ### Componentes de Arquitectura libres
+  * #### Componentes de Arquitectura libres
   Se debe tener en cuenta que su estructura la solución es un solo código lo cual lo hace independiente y sin necesidad de otros componentes. Se debe tener en cuenta para el momento de agregar nuevo código que se mantenga esa condición.
   
-  ### Mantener el código pequeño
+  * #### Mantener el código pequeño
   El código está divido en secciones pequeñas.
   
-  ### Pruebas automatizadas
+  * #### Pruebas automatizadas
   El código cueta con pruebas automatizadas.
   
-  ### Código limpio
+  * #### Código limpio
   
 
 Sin embargo, tiene por mejorar los siguientes ítems
 
- ### Escribir unidades pequeñas
- Esto debido a que una parte de la solución es muy extensa, específicamente en el módulo de Shopping_Car al incluir las ofertas de descuento.
+  * #### Escribir unidades pequeñas
+  Esto debido a que una parte de la solución es muy extensa, específicamente en el módulo de Shopping_Car al incluir las ofertas de descuento.
  ```
     def handle_offers(self, receipt, offers, catalog):
         for p in self._product_quantities.keys():
@@ -394,8 +408,8 @@ Sin embargo, tiene por mejorar los siguientes ítems
                     receipt.add_discount(discount) 
  ```
  
- ### Contiene unidades de interfase pequeñas
- Se debe a que en pequeñas secciones de código se solicita muchos parámetros como por ejemplo.
+  * #### Contiene unidades de interfase pequeñas
+  Se debe a que en pequeñas secciones de código se solicita muchos parámetros como por ejemplo.
  
  ```
      def __init__(self, product, quantity, price, total_price):
@@ -411,8 +425,8 @@ Sin embargo, tiene por mejorar los siguientes ítems
         self._product_quantities = {}
  ``` 
  
- ### Balance de los componentes de arquitectura
- De acuerdo al análisis la solución, al ser un único componente de 176 líneas no es balanceado. Cabe mencionar que el código no complejo por lo que no es estrictamente un punto delicado. Se debe tener en cuenta al aplicar nuevas funciones que los componentes no superen las 170 líneas por componente.
+  #### * Balance de los componentes de arquitectura
+  De acuerdo al análisis la solución, al ser un único componente de 176 líneas no es balanceado. Cabe mencionar que el código no complejo por lo que no es estrictamente un punto delicado. Se debe tener en cuenta al aplicar nuevas funciones que los componentes no superen las 170 líneas por componente.
 
 ## Autores ✒️
 
