@@ -24,11 +24,21 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Install dependencies'
-
-- script: |
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- script: |
+    pip install approvaltests
+    approvaltests
+  displayName: 'approvaltests'
+
+- script: |
+    pip install python-dateutil
+    python-dateutil
+  displayName: 'python-dateutil'
+
+- script: |
+    pip install pytest-approvaltests
+    pytest-approvaltests
+  displayName: 'pytest-approvaltests'
