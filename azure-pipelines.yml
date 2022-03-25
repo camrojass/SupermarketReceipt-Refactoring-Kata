@@ -28,17 +28,17 @@ steps:
     pytest
   displayName: 'pytest'
 
-- script: |
-    pip install approvaltests
-    approvaltests
-  displayName: 'approvaltests'
+#- script: |
+#    pip install approvaltests
+#    approvaltests
+#  displayName: 'approvaltests'
 
-- script: |
-    pip install python-dateutil
-    python-dateutil
-  displayName: 'python-dateutil'
+#- script: |
+#    pip install python-dateutil
+#    python-dateutil
+#  displayName: 'python-dateutil'
 
-- script: |
-    pip install pytest-approvaltests
-    pytest-approvaltests
-  displayName: 'pytest-approvaltests'
+#- script: |
+#    pip install pytest-approvaltests
+#    pytest-approvaltests
+#  displayName: 'pytest-approvaltests'
