@@ -29,11 +29,11 @@ steps:
 - script: |
     pip install pytest pytest-azurepipelines
     pip install pytest-cov
-    pytest --doctest-modules --junitxml=/python/tests/test-results.xml --cov=. --cov-report=xml
+    pytest --doctest-modules --junitxml=test-results.xml --cov=. --cov-report=xml
   displayName: 'pytest'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
-    testResultsFiles: '/python/tests/test-results.xml'
+    testResultsFiles: 'test-results.xml'
     testRunTitle: 'Publish test results for Python $(python.version)'
