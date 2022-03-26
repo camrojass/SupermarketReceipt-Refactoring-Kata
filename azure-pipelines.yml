@@ -8,14 +8,17 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+
 strategy:
   matrix:
-    Python35:
-      python.version: '3.5'
     Python36:
       python.version: '3.6'
     Python37:
       python.version: '3.7'
+    Python38:
+      python.version: '3.8'
+    Python39:
+      python.version: '3.9'
 
 steps:
 - task: UsePythonVersion@0
@@ -25,20 +28,12 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
-    pytest
+    pip install pytest-cov
+    pytest --doctest-modules --junitxml=/python/tests/test-results.xml --cov=. --cov-report=xml
   displayName: 'pytest'
 
-#- script: |
-#    pip install approvaltests
-#    approvaltests
-#  displayName: 'approvaltests'
-
-#- script: |
-#    pip install python-dateutil
-#    python-dateutil
-#  displayName: 'python-dateutil'
-
-#- script: |
-#    pip install pytest-approvaltests
-#    pytest-approvaltests
-#  displayName: 'pytest-approvaltests'
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFiles: '/python/tests/test-results.xml'
+    testRunTitle: 'Publish test results for Python $(python.version)'
