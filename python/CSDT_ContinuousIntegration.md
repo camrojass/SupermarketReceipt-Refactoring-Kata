@@ -76,7 +76,7 @@ Agregue la tarea Publicar resultados de cobertura de código para publicar los r
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
 ```
-
+**NOTA**: 
 ## Resultados
 [![Build Status](https://dev.azure.com/camilorojas-s/SupermarketReceipt-Refactoring-Kata/_apis/build/status/camrojass.SupermarketReceipt-Refactoring-Kata?branchName=main)](https://dev.azure.com/camilorojas-s/SupermarketReceipt-Refactoring-Kata/_build/latest?definitionId=1&branchName=main)
 
