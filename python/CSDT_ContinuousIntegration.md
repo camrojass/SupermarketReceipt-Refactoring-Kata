@@ -79,9 +79,16 @@ Agregue la tarea Publicar resultados de cobertura de código para publicar los r
 **NOTA**: 
 ## Resultados
 [![Build Status](https://dev.azure.com/camilorojas-s/SupermarketReceipt-Refactoring-Kata/_apis/build/status/camrojass.SupermarketReceipt-Refactoring-Kata?branchName=main)](https://dev.azure.com/camilorojas-s/SupermarketReceipt-Refactoring-Kata/_build/latest?definitionId=1&branchName=main)
+### Build
+![image](https://user-images.githubusercontent.com/100396227/160519119-5721d0bf-df7b-4a8e-ba63-ed1f2a3fcbf6.png)
+![image](https://user-images.githubusercontent.com/100396227/160519021-3a0cfdfa-af47-49ea-b48d-12c58c7a9683.png)
 
+### Code Analysis
+![image](https://user-images.githubusercontent.com/100396227/160519199-2f66f7f5-ce09-4d5f-86cc-596e8c16c72e.png)
 
-## Conclusiones
+### Test
+![image](https://user-images.githubusercontent.com/100396227/160518543-4270c370-3175-4f67-a990-f9d85c5a9cd8.png)
+![image](https://user-images.githubusercontent.com/100396227/160518667-adac0090-7087-46e4-a727-f5a1a024a119.png)
 
 ## Autores ✒️
 
