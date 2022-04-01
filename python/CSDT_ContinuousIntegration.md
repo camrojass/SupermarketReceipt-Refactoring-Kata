@@ -21,6 +21,8 @@
    Si desea ver la canalización en acción, seleccione el trabajo de compilación.
 10. Cuando esté listo para realizar cambios en la canalización, selecciónelo en la Pipelines y, a continuación, edite el archivo.
 
+**NOTA**: Para algunos proyectos es necesario solicitar "_Azure DevOps Parallelism Request_" esto se hace a través de siguiente link [Request Parallelism](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR63mUWPlq7NEsFZhkyH8jChUMlM3QzdDMFZOMkVBWU5BWFM3SDI2QlRBSC4u)
+
 ### Uso de varias versiones de Python
   Para ejecutar una canalización con varias versiones de Python, por ejemplo, para probar un paquete con esas versiones, defina una matrix con las versiones de Python. A continuación, establezca UsePythonVersion la tarea para hacer referencia a la matrix variable .
   ```
@@ -76,7 +78,8 @@ Agregue la tarea Publicar resultados de cobertura de código para publicar los r
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
 ```
-**NOTA**: 
+Para ver el proyecto en Azure seguir el siguiente link [Azure DevOps](https://dev.azure.com/camilorojas-s/SupermarketReceipt-Refactoring-Kata/)
+
 ## Resultados
 [![Build Status](https://dev.azure.com/camilorojas-s/SupermarketReceipt-Refactoring-Kata/_apis/build/status/camrojass.SupermarketReceipt-Refactoring-Kata?branchName=main)](https://dev.azure.com/camilorojas-s/SupermarketReceipt-Refactoring-Kata/_build/latest?definitionId=1&branchName=main)
 ### Build
