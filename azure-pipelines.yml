@@ -43,3 +43,12 @@ steps:
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'SonarCloud'
+    organization: 'camilorojas-s'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'camilorojas-s_SupermarketReceipt-Refactoring-Kata'
+    cliProjectName: 'SupermarketReceipt-Refactoring-Kata'
+    cliSources: '.'
