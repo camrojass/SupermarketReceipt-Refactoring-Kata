@@ -32,9 +32,9 @@ Con el proyecto como publico, realizar los siguientes pasos a continuación
    * Resultados de la publicación.
    * Guardar y correr el pipeline.
  5. Cree el archivo ```sonar-project.properties```
-   1. Cree un nuevo archivo llamado ```sonar-project.properties```
+   1. Cree un nuevo archivo en la raíz del proyecto que se llame ```sonar-project.properties```
    2. Copie y guarde la siguiente configuración en el archivo
-   ``
+   ```
   sonar.projectKey=LLAVEDELPROYECTOSONARCLOUD
   sonar.organization=NOMBREORGANIZACIONSONARCLOUD
 
@@ -47,7 +47,7 @@ Con el proyecto como publico, realizar los siguientes pasos a continuación
 
   # Encoding of the source code. Default is default system encoding
   #sonar.sourceEncoding=UTF-8
-   ``
+   ```
 
 **NOTA**: Para los proyectos publicos es necesario solicitar "_Azure DevOps Parallelism Request_" (especialmente si son proyectos públicos) esto se hace a través de siguiente link [Request Parallelism](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR63mUWPlq7NEsFZhkyH8jChUMlM3QzdDMFZOMkVBWU5BWFM3SDI2QlRBSC4u)
 
@@ -56,17 +56,36 @@ Con el proyecto como publico, realizar los siguientes pasos a continuación
 2. Instale la extensión de SonarCloud para GitHub
 3. Otorgue los permisos solicitados por SonarCloud para GitHub
 
-## Resultados Github
+## Resultados SonarCloud con AzureDevOps
+
+![image](https://user-images.githubusercontent.com/100396227/162575562-2aa23a41-a3a5-4b63-b44d-ebe26bb7aa1a.png)
+SonarCloud está evaluando la carpeta "test" como carpeta de código adicional, debido a que no se encuentra en la raíz.
+* ### Descripción del Proyecto
+![image](https://user-images.githubusercontent.com/100396227/162576792-5bc4a193-7cde-455a-9370-913d62d84782.png)
+En la gráfica de Coverage vs Deuda técnica evidencia que en general el CodeSmell detectado no es de alto impacto (color verde) lo cual evidencia que en general el proyecto tiene cosas por mejorar que no son de alto impacto. Por otro lado, y teniendo en cuenta que está contemplando la carpeta de pruebas como una carpeta de código y no de pruebas unitarias, indica que el principal trabajo a realizar en esta carpeta.
+* ### CodeSmell detectado
+![image](https://user-images.githubusercontent.com/100396227/162575804-dc72c58d-685c-4033-adde-8886a0309d7f.png)
+Los CodeSmell detectados por Sonar se debe principalmente al uso de caracteres especiales o el guardado de información en variables poco claras (i,x... etc) en especial en las pruebas unitarias. Sonar hace la aclaración que la prioridad son las variables debido a que son errores críticos, sin embargo, se evidencia que la calificación general del proyecto respecto al item es calificación A.
+* ### Debt Radio
+![image](https://user-images.githubusercontent.com/100396227/162575868-ff120a77-6317-41ea-8f6a-3cb3f1b57dee.png)
+El indice de deuda indica que el porcentaje de deuda técnica con respecto a la solución completa es pequeño y optimo debido que solo es un 1.1% del código que tiene deuda respecto al total de las líneas de código.
+## Resultados SonarCloud con Github
 
 ![image](https://user-images.githubusercontent.com/100396227/161389617-f78b701c-023e-4ffc-9361-6bc7b86e3516.png)
+* ### Descripción del proyecto
+![image](https://user-images.githubusercontent.com/100396227/162576213-1c4128f4-c49d-4553-b39c-abc87b6cc961.png)
+No muestra resultados debido a que no ha habido cambios de código en los últimos 30 días.
 * ### CodeSmell detectado
 ![image](https://user-images.githubusercontent.com/100396227/161389670-84ed94b0-ed9b-468b-8058-0283fc9a2557.png)
-Los CodeSmell detectados por Sonar se debe principalmente al uso de caracteres especiales o el guardado de información en variables poco claras (i,x... etc) en especial en las pruebas unitarias. Sonar hace la aclaración que la prioridad son las variables debido a que son errores críticos, sin embargo, se evidencia que la calificación general del proyecto respecto al item es calificación A.
-* Debt Radio
+Al igual que en los resultados con Azure DevOps, Los CodeSmell detectados por Sonar se debe principalmente al uso de caracteres especiales o el guardado de información en variables poco claras (i,x... etc) en especial en las pruebas unitarias.
+* ### Debt Radio
 ![image](https://user-images.githubusercontent.com/100396227/161389748-af27e7f0-57e7-4281-9257-5eca2d89a54e.png)
-El indice de deuda indica que el porcentaje de deuda técnica con respecto a la solución completa es pequeño y optimo debido que solo es un 1.1% del código que tiene deuda respecto al total de las líneas de código.
+Al igual que en los resultados con Azure DevOps, El indice de deuda indica que el porcentaje de deuda técnica con respecto a la solución completa es pequeño y optimo debido que solo es un 1.1% del código que tiene deuda respecto al total de las líneas de código.
 
-En general la solución tiene buena calificación respecto a su tamaño, lo cual la cataloga como solución buena debido al reiting A en los diferentes aspectos analizados por Sonar.
+En general la solución tiene buena calificación respecto a su tamaño, lo cual la cataloga como solución buena debido al raiting A en los diferentes aspectos analizados por Sonar.
+
+## Comparativa de resultados
+Cabe mencionar que dado que se hizo la integración continua con Azure DevOps, y existen dos ramas allí se ve el doble de líneas de código entre los dos resultados. Teniendo en cuenta lo anterior, en general, los resultados son identicos lo cual evidencia que el uso de _SonarCloud_ en diferentes plataformas no tiene variación. Sin embargo, un punto interesante a contemplar es el ítem de tiempo puesto que la comparación del coverage vs la deuda técnica no es visible en Github debido a que en los últimos 30 días no han habido cambios de código, cosa que no tiene en cuenta con el resultado de Azure DevOps.
 
 ## Autores ✒️
 
