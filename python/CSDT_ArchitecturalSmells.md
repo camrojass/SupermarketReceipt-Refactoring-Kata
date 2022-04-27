@@ -94,7 +94,8 @@ Teniendo en cuenta los resultados obtenidos en los diferentes analisis realizado
 Se evidencia en los diferentes análisis que una de las actuales limitaciones del sistema es la cobertura de código diversa en los diferentes elementos o componentes del proyecto, por tal razón se hace necesario establecer un estandar mínimo para todo el código.
 ![image](https://user-images.githubusercontent.com/100396227/165436208-453a7c99-e480-40fd-be70-20901a68b3d6.png)
 ### Escenario No. 2
-Teniendo en cuenta que las diferentes ofertas se encuentran en un código spagetti, se hace evidente que se establezca un escenario de nuevos descuentos a aplicar con consideraciones más específicas como lo es el descuento de _Madrugón_ o _Trasnochón_ que los supermercados realizan en fechas especiales del año.
+Teniendo en cuenta que las diferentes ofertas se encuentran en un código spagetti, se hace evidente que se establezca un escenario de nuevos descuentos a aplicar con consideraciones más específicas como lo es el descuento de _Madrugón_ o _Trasnochón_ que los supermercados realizan en fechas especiales del año. 
+
 ![image](https://user-images.githubusercontent.com/100396227/165436023-2dc05a43-baf0-43e5-8b56-714f4f2e19b1.png)
 ### Escenario No. 3
 Dentro de las consideraciones a tener en cuenta está el aumento de clientes que puede tener un supermercado en horas pico lo cual hace innevitable que se agregue más componentes para mejorar el tiempo de servicio, sin embargo, esto implica realizar escalamientos del sistema manteniendo el rendimiento actual.
