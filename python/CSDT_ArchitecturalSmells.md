@@ -87,6 +87,20 @@ En general la solución tiene buena calificación respecto a su tamaño, lo cual
 ## Comparativa de resultados
 Cabe mencionar que dado que se hizo la integración continua con Azure DevOps, y existen dos ramas allí se ve el doble de líneas de código entre los dos resultados. Teniendo en cuenta lo anterior, en general, los resultados son identicos lo cual evidencia que el uso de _SonarCloud_ en diferentes plataformas no tiene variación. Sin embargo, un punto interesante a contemplar es el ítem de tiempo puesto que la comparación del coverage vs la deuda técnica no es visible en Github debido a que en los últimos 30 días no han habido cambios de código, cosa que no tiene en cuenta con el resultado de Azure DevOps.
 
+## Taller de atributos de calidad
+Teniendo en cuenta los resultados obtenidos en los diferentes analisis realizados a través de SonarCloud, se hace necesario considerar los siguientes escenarios de negocio como parte de la mejora continua de la arquitectura del proyecto.
+
+### Escenario No. 1
+Se evidencia en los diferentes análisis que una de las actuales limitaciones del sistema es la cobertura de código diversa en los diferentes elementos o componentes del proyecto, por tal razón se hace necesario establecer un estandar mínimo para todo el código.
+![image](https://user-images.githubusercontent.com/100396227/165436208-453a7c99-e480-40fd-be70-20901a68b3d6.png)
+### Escenario No. 2
+Teniendo en cuenta que las diferentes ofertas se encuentran en un código spagetti, se hace evidente que se establezca un escenario de nuevos descuentos a aplicar con consideraciones más específicas como lo es el descuento de _Madrugón_ o _Trasnochón_ que los supermercados realizan en fechas especiales del año.
+![image](https://user-images.githubusercontent.com/100396227/165436023-2dc05a43-baf0-43e5-8b56-714f4f2e19b1.png)
+### Escenario No. 3
+Dentro de las consideraciones a tener en cuenta está el aumento de clientes que puede tener un supermercado en horas pico lo cual hace innevitable que se agregue más componentes para mejorar el tiempo de servicio, sin embargo, esto implica realizar escalamientos del sistema manteniendo el rendimiento actual.
+![image](https://user-images.githubusercontent.com/100396227/165436118-c66ae79b-75bd-4bb1-95d2-f024dbd295ea.png)
+
+
 ## Autores ✒️
 
 * **Camilo Alejandro Rojas** - *Trabajo y documentación* - [camrojass](https://github.com/camrojass)
