@@ -63,7 +63,7 @@ El supermercado ofrece ofertas especiales, por ejemplo:
 2. Refactoring al archivo "shopping_cart.py" realizando la extracción de método, movimiendo los calculos de ofertas a una nueva clase llamada detalle.
 3. Refactoring al detalle de "shopping_cart.py" modificando la lógica del método para evitar la depentencia de los "ifs".
 
-### Características de Clean Code no cumplidas
+## Características de Clean Code no cumplidas
 
 #### Código enfocado: 
  - El código de "shopping_cart.py" contiene la cantidad de productos y adicionalmente realiza los calculos de descuentos.
