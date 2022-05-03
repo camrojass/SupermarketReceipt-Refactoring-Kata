@@ -7,16 +7,16 @@
 * Proyecto público en [Azure DevOps](https://dev.azure.com/)**
 * Cuenta en Sonarcloud [SonarCloud](https://sonarcloud.io/)
 
-** Debido que para poder ser analizado a través de SonarCloud, solicita que el proyecto esté como público. Implica que se deba pedir el permiso "_parallelism_"
+** Debido que para poder ser analizado a través de SonarCloud, solicita que el proyecto esté como público. Implica que se deba pedir el permiso "_Azure DevOps Parallelism Request_" [Request Parallelism](https://forms.office.com/pages/responsepage.aspx?
 
 ## Instalación de SonarCloud en Azure
 
-Con el proyecto como publico, realizar los siguientes pasos a continuación
+Con el proyecto como público, realizar los pasos a continuación:
 1. Ingresar a SonarCloud, sino tiene cuenta creada, puede crear su cuenta a través de la cuenta de Azure DevOps
 2. Instale la extensión Sonarcloud a través de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud)
 3. Agregar el Endpoind del servicio de SonarCloud en Azure
-  * Ir a la configuración del proyecto a la opción Connexciones de servicio
-  * Agregar la conexión de servicio tupo SonarCloud
+  * Ir a la configuración del proyecto a la opción Connexiones de servicio
+  * Agregar la conexión de servicio tipo SonarCloud
   * Usar el token propuesto por SonarCloud
   * Hacer clic en verificar
 4. Configurar el pipeline de Azure de acuerdo al lenguaje de desarrollo del proyecto. (En el caso del proyecto se encuentra en python)
