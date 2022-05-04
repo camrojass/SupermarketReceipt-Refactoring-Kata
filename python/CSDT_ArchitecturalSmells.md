@@ -96,11 +96,10 @@ Se evidencia en los diferentes análisis que una de las actuales limitaciones de
 ### Escenario No. 2
 Teniendo en cuenta que las diferentes ofertas se encuentran en un código spagetti, se hace evidente que se establezca un escenario de nuevos descuentos a aplicar con consideraciones más específicas como lo es el descuento de _Madrugón_ o _Trasnochón_ que los supermercados realizan en fechas especiales del año. 
 
-![image](https://user-images.githubusercontent.com/100396227/165436023-2dc05a43-baf0-43e5-8b56-714f4f2e19b1.png)
+![image](https://user-images.githubusercontent.com/100396227/165436118-c66ae79b-75bd-4bb1-95d2-f024dbd295ea.png)
 ### Escenario No. 3
 Dentro de las consideraciones a tener en cuenta está el aumento de clientes que puede tener un supermercado en horas pico lo cual hace innevitable que se agregue más componentes para mejorar el tiempo de servicio, sin embargo, esto implica realizar escalamientos del sistema manteniendo el rendimiento actual.
-![image](https://user-images.githubusercontent.com/100396227/165436118-c66ae79b-75bd-4bb1-95d2-f024dbd295ea.png)
-
+![image](https://user-images.githubusercontent.com/100396227/166619513-12b35694-a029-4f08-93b4-324d42861d93.png)
 
 ## Autores ✒️
 
