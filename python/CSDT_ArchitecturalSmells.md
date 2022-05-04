@@ -99,6 +99,7 @@ Teniendo en cuenta que las diferentes ofertas se encuentran en un código spaget
 ![image](https://user-images.githubusercontent.com/100396227/165436118-c66ae79b-75bd-4bb1-95d2-f024dbd295ea.png)
 ### Escenario No. 3
 Dentro de las consideraciones a tener en cuenta está el aumento de clientes que puede tener un supermercado en horas pico lo cual hace innevitable que se agregue más componentes para mejorar el tiempo de servicio, sin embargo, esto implica realizar escalamientos del sistema manteniendo el rendimiento actual.
+
 ![image](https://user-images.githubusercontent.com/100396227/166619513-12b35694-a029-4f08-93b4-324d42861d93.png)
 
 ## Autores ✒️
